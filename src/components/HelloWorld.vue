@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h2>{{ msg }}</h2>
   </div>
 </template>
 
@@ -9,7 +9,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: '与米系统'
+      msg: '欢迎进入与米系统'
     }
   }
 }
@@ -19,6 +19,8 @@ export default {
 <style scoped>
 h1, h2 {
   font-weight: normal;
+  padding: 20px;
+  text-align: center;
 }
 ul {
   list-style-type: none;

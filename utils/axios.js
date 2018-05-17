@@ -1,8 +1,8 @@
 import axios from 'axios'
 
-localStorage.setItem('propertyId', 1)
-let tokens = 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODMwMjEzMzI4NyIsInVzZXJfaWQiOjEsImNyZWF0ZWQiOjE1MjQ3MzExNTA4MDMsImV4cCI6MTUyNTU5NTE1MH0.BFhYGjrJ7APtgW_fWE6AEuh24khvBpet3Ss5NaX7zFitxc8TAarQTUZCrrjNPVbcyUEFBNRxUPePcMRpQKgfmw'
+let tokens = 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODMwMjEzMzI4NyIsInVzZXJfaWQiOjEsImNyZWF0ZWQiOjE1MjQ4MDg2MDM5MjAsImV4cCI6MTUyNTY3MjYwM30.ZIf3bU64W00ZJewPST01fmFfP6DSXmHvpfxAmf0jJOk-Ite6uizdrsy9MFd9Fuwcix_GyrMul2jRPhG5M6bNIw'
 let ajaxBaseUrl = process.env.API_ROOT
+console.log(process.env)
 let $http = axios.create({
     headers: {
         'Content-Type': 'application/json',
@@ -12,6 +12,6 @@ let $http = axios.create({
     transformRequest: [function (data) {
         return JSON.stringify(data)
     }],
-    baseURL: ajaxBaseUrl
+    baseURL: 'http://api.yumizd.com/manage'
 })
 export { $http }

@@ -48,10 +48,10 @@
                 <i class="el-icon-edit-outline"></i>
                 <span>权限管理</span>
               </template>
-              <el-menu-item index="/housingestateManagement">
+              <el-menu-item index="/staffManagement">
                 <template slot="title">员工管理</template>
               </el-menu-item>
-              <el-menu-item index="/housingestateManagement">
+              <el-menu-item index="/roleManagement">
                 <template slot="title">角色管理</template>
               </el-menu-item>
             </el-submenu>

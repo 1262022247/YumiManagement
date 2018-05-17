@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+// import HelloWorld from '@/components/HelloWorld'
 import housingestateManagement from '../page/dataCentre/housingestateManagement'
 import newHousing from '../page/dataCentre/newHousing'
 import buildingManagement from '../page/dataCentre/buildingManagement'
@@ -17,6 +17,8 @@ import newKeyapplication from '../page/propertyService/newKeyapplication'
 import cardManagement from '../page/propertyService/cardManagement'
 import buyCard from '../page/propertyService/buyCard'
 import resetCard from '../page/propertyService/resetCard'
+import staffManagement from '../page/permissionsManagement/staffManagement'
+import roleManagement from '../page/permissionsManagement/roleManagement'
 
 Vue.use(Router)
 
@@ -24,8 +26,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'housingestateManagement',
+      component: housingestateManagement
     },
     {
       path: '/housingestateManagement',
@@ -106,6 +108,16 @@ export default new Router({
       path: '/resetCard',
       name: 'resetCard',
       component: resetCard
+    },
+    {
+      path: '/staffManagement',
+      name: 'staffManagement',
+      component: staffManagement
+    },
+    {
+      path: '/roleManagement',
+      name: 'roleManagement',
+      component: roleManagement
     }
   ]
 })
