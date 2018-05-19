@@ -74,9 +74,6 @@
           <div class="block">
             <el-pagination
               background
-              @size-change="handleSizeChange"
-              @current-change="handleCurrentChange"
-              :current-page="currentPage4"
               layout="total, sizes, prev, pager, next, jumper"
               :page-size="10"
               :page-sizes="[10, 20, 30, 40]"

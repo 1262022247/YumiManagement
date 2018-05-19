@@ -14,27 +14,171 @@
       <div class="right-show">
         <div class="lists">
           <el-row :gutter="25">
-            <el-col :span="8" :xl="6">
+            <el-col >
               <router-link :to="'/newHousing/2/0'">
                 <div class="grid-content bg-purple addinfo">+新增小区</div>
               </router-link>
             </el-col>
-            <el-col :span="8" :xl="6" v-for="item in lists" v-bind:key="item.id">
+            <el-col>
               <div class="grid-content bg-purple">
                 <div class="lists-top">
                   <div class="lists-top-left"><img src="../../../static/house.png"></div>
                   <div class="lists-top-right">
-                    <p>{{item.communityName}}</p>
-                    <p><i class="el-icon-location"></i><span>{{item.address}}</span></p>
-                    <p><i class="el-icon-mobile-phone"></i><span>{{item.tel}}</span></p>
+                    <p>润和苑</p>
+                    <p><i class="el-icon-location"></i><span>上海市 松江区 泗泾镇 鼓浪路 润和苑</span></p>
+                    <p><i class="el-icon-mobile-phone"></i><span>021-6483293</span></p>
                   </div>
                 </div>
                 <div class="lists-bottom">
                   <el-row>
-                    <el-col :span="12"><router-link :to="'/newHousing/0'+item.id">查看</router-link></el-col>
+                    <el-col :span="12"><router-link to="/newHousing/0/0">查看</router-link></el-col>
                     <el-col :span="12">
                       <el-select placeholder="更多" size="small" value="更多">
-                        <el-option value="edits"><router-link :to="'/newHousing/1'+item.id">编辑</router-link></el-option>
+                        <el-option value="edits"><router-link to="/newHousing/1/0">编辑</router-link></el-option>
+                        <el-option value="file">归档</el-option>
+                        <el-option value="deletes">删除</el-option>
+                      </el-select>
+                    </el-col>
+                  </el-row>
+                </div>
+              </div>
+            </el-col>
+            <el-col>
+              <div class="grid-content bg-purple">
+                <div class="lists-top">
+                  <div class="lists-top-left"><img src="../../../static/house.png"></div>
+                  <div class="lists-top-right">
+                    <p>润和苑</p>
+                    <p><i class="el-icon-location"></i><span>上海市 松江区 泗泾镇 鼓浪路 润和苑</span></p>
+                    <p><i class="el-icon-mobile-phone"></i><span>021-6483293</span></p>
+                  </div>
+                </div>
+                <div class="lists-bottom">
+                  <el-row>
+                    <el-col :span="12"><router-link to="/newHousing/0/0">查看</router-link></el-col>
+                    <el-col :span="12">
+                      <el-select placeholder="更多" size="small" value="更多">
+                        <el-option value="edits"><router-link to="/newHousing/1/0">编辑</router-link></el-option>
+                        <el-option value="file">归档</el-option>
+                        <el-option value="deletes">删除</el-option>
+                      </el-select>
+                    </el-col>
+                  </el-row>
+                </div>
+              </div>
+            </el-col>
+            <el-col>
+              <div class="grid-content bg-purple">
+                <div class="lists-top">
+                  <div class="lists-top-left"><img src="../../../static/house.png"></div>
+                  <div class="lists-top-right">
+                    <p>润和苑</p>
+                    <p><i class="el-icon-location"></i><span>上海市 松江区 泗泾镇 鼓浪路 润和苑</span></p>
+                    <p><i class="el-icon-mobile-phone"></i><span>021-6483293</span></p>
+                  </div>
+                </div>
+                <div class="lists-bottom">
+                  <el-row>
+                    <el-col :span="12"><router-link to="/newHousing/0/0">查看</router-link></el-col>
+                    <el-col :span="12">
+                      <el-select placeholder="更多" size="small" value="更多">
+                        <el-option value="edits"><router-link to="/newHousing/1/0">编辑</router-link></el-option>
+                        <el-option value="file">归档</el-option>
+                        <el-option value="deletes">删除</el-option>
+                      </el-select>
+                    </el-col>
+                  </el-row>
+                </div>
+              </div>
+            </el-col>
+            <el-col>
+              <div class="grid-content bg-purple">
+                <div class="lists-top">
+                  <div class="lists-top-left"><img src="../../../static/house.png"></div>
+                  <div class="lists-top-right">
+                    <p>润和苑</p>
+                    <p><i class="el-icon-location"></i><span>上海市 松江区 泗泾镇 鼓浪路 润和苑</span></p>
+                    <p><i class="el-icon-mobile-phone"></i><span>021-6483293</span></p>
+                  </div>
+                </div>
+                <div class="lists-bottom">
+                  <el-row>
+                    <el-col :span="12"><router-link to="/newHousing/0/0">查看</router-link></el-col>
+                    <el-col :span="12">
+                      <el-select placeholder="更多" size="small" value="更多">
+                        <el-option value="edits"><router-link to="/newHousing/1/0">编辑</router-link></el-option>
+                        <el-option value="file">归档</el-option>
+                        <el-option value="deletes">删除</el-option>
+                      </el-select>
+                    </el-col>
+                  </el-row>
+                </div>
+              </div>
+            </el-col>
+            <el-col>
+              <div class="grid-content bg-purple">
+                <div class="lists-top">
+                  <div class="lists-top-left"><img src="../../../static/house.png"></div>
+                  <div class="lists-top-right">
+                    <p>润和苑</p>
+                    <p><i class="el-icon-location"></i><span>上海市 松江区 泗泾镇 鼓浪路 润和苑</span></p>
+                    <p><i class="el-icon-mobile-phone"></i><span>021-6483293</span></p>
+                  </div>
+                </div>
+                <div class="lists-bottom">
+                  <el-row>
+                    <el-col :span="12"><router-link to="/newHousing/0/0">查看</router-link></el-col>
+                    <el-col :span="12">
+                      <el-select placeholder="更多" size="small" value="更多">
+                        <el-option value="edits"><router-link to="/newHousing/1/0">编辑</router-link></el-option>
+                        <el-option value="file">归档</el-option>
+                        <el-option value="deletes">删除</el-option>
+                      </el-select>
+                    </el-col>
+                  </el-row>
+                </div>
+              </div>
+            </el-col>
+            <el-col>
+              <div class="grid-content bg-purple">
+                <div class="lists-top">
+                  <div class="lists-top-left"><img src="../../../static/house.png"></div>
+                  <div class="lists-top-right">
+                    <p>润和苑</p>
+                    <p><i class="el-icon-location"></i><span>上海市 松江区 泗泾镇 鼓浪路 润和苑</span></p>
+                    <p><i class="el-icon-mobile-phone"></i><span>021-6483293</span></p>
+                  </div>
+                </div>
+                <div class="lists-bottom">
+                  <el-row>
+                    <el-col :span="12"><router-link to="/newHousing/0/0">查看</router-link></el-col>
+                    <el-col :span="12">
+                      <el-select placeholder="更多" size="small" value="更多">
+                        <el-option value="edits"><router-link to="/newHousing/1/0">编辑</router-link></el-option>
+                        <el-option value="file">归档</el-option>
+                        <el-option value="deletes">删除</el-option>
+                      </el-select>
+                    </el-col>
+                  </el-row>
+                </div>
+              </div>
+            </el-col>
+            <el-col>
+              <div class="grid-content bg-purple">
+                <div class="lists-top">
+                  <div class="lists-top-left"><img src="../../../static/house.png"></div>
+                  <div class="lists-top-right">
+                    <p>润和苑</p>
+                    <p><i class="el-icon-location"></i><span>上海市 松江区 泗泾镇 鼓浪路 润和苑</span></p>
+                    <p><i class="el-icon-mobile-phone"></i><span>021-6483293</span></p>
+                  </div>
+                </div>
+                <div class="lists-bottom">
+                  <el-row>
+                    <el-col :span="12"><router-link to="/newHousing/0/0">查看</router-link></el-col>
+                    <el-col :span="12">
+                      <el-select placeholder="更多" size="small" value="更多">
+                        <el-option value="edits"><router-link to="/newHousing/1/0">编辑</router-link></el-option>
                         <el-option value="file">归档</el-option>
                         <el-option value="deletes">删除</el-option>
                       </el-select>
@@ -203,6 +347,9 @@ export default {
   .el-select-dropdown__item.selected {
     color: #333;
     font-weight: 400;
+  }
+  .el-col.el-col-24 {
+    width:450px;
   }
 </style>
 <style type="text/css">

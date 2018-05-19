@@ -136,7 +136,7 @@ export default {
     background-color: #000!important;
   }
   .el-menu-item, .el-submenu__title {
-    color: #FFF;
+    color: #FFF !important;
   }
   .el-menu-item__title {
     padding-left: 50px!important;
@@ -152,7 +152,7 @@ export default {
   .main-left [class^=el-icon-] {color: #FFF;}
 
   /* 右侧导航 */
-  .main-right{ -webkit-box-flex:1; box-flex:1; -moz-box-flex:1}
+  .main-right{ box-flex:1; -moz-box-flex:1; -webkit-box-flex:1; -ms-box-flex:1;}
   .header { line-height: 60px; border-bottom: 1px solid #E6E6E6; padding:0 25px;background: #FFFFFF;}
   .right {float:right}
   .userImg img{width:25px; border-radius:50%;vertical-align:middle;margin: 0 15px 0 30px; }

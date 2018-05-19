@@ -37,7 +37,7 @@
             tooltip-effect="dark"
             style="width: 100%"
             :default-sort = "{prop: 'number'}"
-            @selection-change="handleSelectionChange">
+            >
             <el-table-column
               type="selection"
               width="55">
@@ -85,9 +85,6 @@
           <div class="block">
             <el-pagination
               background
-              @size-change="handleSizeChange"
-              @current-change="handleCurrentChange"
-              :current-page="currentPage4"
               layout="total, sizes, prev, pager, next, jumper"
               :page-size="10"
               :page-sizes="[10, 20, 30, 40]"
