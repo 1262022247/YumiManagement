@@ -1,6 +1,6 @@
 # yumisystem
 
-> A Vue.js project
+> A Vue.js project based ElemntUI
 
 ## Build Setup
 
