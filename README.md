@@ -25,3 +25,7 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+The page is as follows
+![image](https://github.com/1262022247/YumiManagement/blob/master/src/assets/yumi1.png)
+![image](https://github.com/1262022247/YumiManagement/blob/master/src/assets/yumi2.png)
